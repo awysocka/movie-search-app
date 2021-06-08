@@ -3,12 +3,13 @@ export const theme = {
     darkpurple: '#0F073E',
     purple: '#241195',
     lightpurple: '#6C56EC',
+    yellow: '#FBD408',
     grey: '#585858',
     white: '#fff',
   },
   breakpoints: {
-    tablet: '@media screen and (min-width: 768px)',
-    desktop: '@media screen and (min-width: 1367px)',
+    medium: '@media screen and (min-width: 768px)',
+    large: '@media screen and (min-width: 1367px)',
     hover: '@media (hover: hover)',
   },
 };

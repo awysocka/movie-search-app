@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
             ${({ theme }) => theme.colors.purple}, 
             ${({ theme }) => theme.colors.darkpurple});
         color: ${({ theme }) => theme.colors.white};
+        background-attachment: fixed;
         
     }
 
