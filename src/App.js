@@ -6,6 +6,7 @@ import { Wrapper } from 'App.styles';
 import Navigation from 'components/Navigation/Navigation';
 import HomePage from './views/HomePage';
 import SearchResults from './views/SearchResults';
+import MovieDetails from './views/MovieDetails';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Navigation />
         <Wrapper>
           <Switch>
+            <Route path={`/search/:id`}>
+              <MovieDetails />
+            </Route>
             <Route path={`/search`}>
               <SearchResults />
             </Route>

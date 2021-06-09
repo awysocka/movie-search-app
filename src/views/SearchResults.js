@@ -16,18 +16,11 @@ const MoviesList = styled.ul`
 
 const Wrapper = styled.div`
   width: 100%;
-  position: absolute;
-  top: 0;
-  padding: 20px;
 
   h1 {
     font-size: 2.4rem;
     margin-bottom: 30px;
     text-align: start;
-  }
-
-  ${({ theme }) => theme.breakpoints.medium} {
-    padding: 40px;
   }
 `;
 

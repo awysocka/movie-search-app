@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom';
+import MovieRatingElement from 'components/MovieRatingElement/MovieRatingElement';
 import {
   MovieItem,
   MoviePosterContainer,
   MoviePoster,
-  MovieRating,
   Title,
 } from 'components/SearchItem/SearchItem.styles';
 
 const SearchItem = ({
   movieDescription: {
+    id,
     poster_path: posterPath,
     vote_average: rating,
-    original_title: title,
+    title,
   },
 }) => {
   const imgUrl = `https://image.tmdb.org/t/p/w500/${posterPath}`;
@@ -19,15 +21,17 @@ const SearchItem = ({
   return (
     <MovieItem>
       <MoviePosterContainer>
-        <a href="/">
+        <Link to={`/search/${id}/${title}`}>
           <MoviePoster
             src={`${posterPath === null ? noPoster : imgUrl}`}
             alt={title}
           ></MoviePoster>
-        </a>
-        <MovieRating>{rating}</MovieRating>
+        </Link>
+        <MovieRatingElement rating={rating} />
       </MoviePosterContainer>
-      <Title>{title}</Title>
+      <Link to={`/search/${id}/${title}`}>
+        <Title>{title}</Title>
+      </Link>
     </MovieItem>
   );
 };
