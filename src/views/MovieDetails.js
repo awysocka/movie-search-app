@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import MovieDescriptions from 'components/MovieDescription/MovieDescription';
+import Recommendations from 'components/Recommendations/Recomendations';
 
 const MovieDetails = () => {
   const [movieInfo, setMovieInfo] = useState({});
@@ -24,6 +25,7 @@ const MovieDetails = () => {
       ) : (
         <MovieDescriptions movieDescription={movieInfo} />
       )}
+      <Recommendations id={id} />
     </>
   );
 };

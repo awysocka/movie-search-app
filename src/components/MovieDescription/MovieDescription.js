@@ -29,13 +29,13 @@ const MovieDescription = ({
   },
 }) => {
   const imgUrl = `https://image.tmdb.org/t/p/w500/${posterPath}`;
-  const noPoster = 'nophoto.png';
+  const noPoster = '/nophoto.png';
 
   return (
     <Section>
       <Image
-        src={`${posterPath === undefined ? noPoster : imgUrl}`}
-        alt="img"
+        src={`${posterPath === null || undefined ? noPoster : imgUrl}`}
+        alt={title}
       />
       <InfoWrapper>
         <BaseInfo>

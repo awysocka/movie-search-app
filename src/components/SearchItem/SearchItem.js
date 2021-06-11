@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import MovieRatingElement from 'components/MovieRatingElement/MovieRatingElement';
+import { getRating } from 'helpers/getRating';
 import {
   MovieItem,
   MoviePosterContainer,
@@ -16,7 +17,7 @@ const SearchItem = ({
   },
 }) => {
   const imgUrl = `https://image.tmdb.org/t/p/w500/${posterPath}`;
-  const noPoster = 'nophoto.png';
+  const noPoster = '/nophoto.png';
 
   return (
     <MovieItem>
@@ -27,7 +28,7 @@ const SearchItem = ({
             alt={title}
           ></MoviePoster>
         </Link>
-        <MovieRatingElement rating={rating} />
+        <MovieRatingElement rating={getRating(rating)} />
       </MoviePosterContainer>
       <Link to={`/search/${id}/${title}`}>
         <Title>{title}</Title>

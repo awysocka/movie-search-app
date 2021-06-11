@@ -4,6 +4,7 @@ export const Section = styled.section`
   max-width: 1024px;
   display: grid;
   grid-row-gap: 20px;
+  margin-bottom: 100px;
 
   ${({ theme }) => theme.breakpoints.medium} {
     grid-template-columns: 300px 1fr;
