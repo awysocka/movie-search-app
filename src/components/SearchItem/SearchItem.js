@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import MovieRatingElement from 'components/MovieRatingElement/MovieRatingElement';
 import { getRating } from 'helpers/getRating';
 import {
@@ -35,6 +36,15 @@ const SearchItem = ({
       </Link>
     </MovieItem>
   );
+};
+
+SearchItem.propTypes = {
+  movieDescription: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    posterPath: PropTypes.string,
+    rating: PropTypes.number,
+    title: PropTypes.string,
+  }),
 };
 
 export default SearchItem;

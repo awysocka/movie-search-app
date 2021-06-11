@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { timeConverter } from 'helpers/timeConverter';
 import { getYear } from 'helpers/getYear';
 import MovieRatingElement from 'components/MovieRatingElement/MovieRatingElement';
@@ -73,6 +74,20 @@ const MovieDescription = ({
       </InfoWrapper>
     </Section>
   );
+};
+
+MovieDescription.propTypes = {
+  movieDescription: PropTypes.shape({
+    posterPath: PropTypes.string,
+    title: PropTypes.string,
+    overview: PropTypes.string,
+    roductionCuntries: PropTypes.array,
+    release: PropTypes.string,
+    status: PropTypes.string,
+    rating: PropTypes.number,
+    genres: PropTypes.array,
+    runtime: PropTypes.number,
+  }),
 };
 
 export default MovieDescription;

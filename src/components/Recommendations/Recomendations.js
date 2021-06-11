@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
@@ -33,6 +35,10 @@ const Recommendations = ({ id }) => {
       )}
     </>
   );
+};
+
+Recommendations.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default Recommendations;
