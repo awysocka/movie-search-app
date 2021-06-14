@@ -7,6 +7,7 @@ import SearchItem from 'components/SearchItem/SearchItem';
 
 const Wrapper = styled.div`
   width: 100%;
+  flex-grow: 1;
 
   h1 {
     font-size: 2.4rem;

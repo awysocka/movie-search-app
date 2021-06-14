@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   max-width: 1024px;
   display: grid;
+  flex-grow: 1;
   grid-row-gap: 20px;
   margin-bottom: 100px;
 

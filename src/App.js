@@ -7,6 +7,7 @@ import Navigation from 'components/Navigation/Navigation';
 import HomePage from './views/HomePage';
 import SearchResults from './views/SearchResults';
 import MovieDetails from './views/MovieDetails';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <HomePage />
             </Route>
           </Switch>
+          <Footer />
         </Wrapper>
       </ThemeProvider>
     </Router>

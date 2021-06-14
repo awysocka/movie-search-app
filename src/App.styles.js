@@ -8,11 +8,11 @@ export const Wrapper = styled.main`
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 10px;
   margin: 0 auto;
   position: relative;
 
   ${({ theme }) => theme.breakpoints.medium} {
-    padding: 40px;
+    padding: 40px 40px 10px;
   }
 `;
