@@ -1,4 +1,4 @@
-d# agenda-app
+# movie search app
 This is web application to search movies. It use the [TMDb API](https://www.themoviedb.org/documentation/api). 
 
 [movie search app mockup](https://github.com/awysocka/movie-search-app/blob/master/readme-img/movie-search-app-mockup.jpg)
