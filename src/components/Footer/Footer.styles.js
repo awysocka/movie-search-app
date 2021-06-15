@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: auto;
   padding-top: 10px;
   border-top: 1px solid ${({ theme }) => theme.colors.white};
 
@@ -18,8 +18,7 @@ export const Wrapper = styled.div`
 
 export const Image = styled.img`
   height: 100%;
-  width: 100%;
-  max-width: 120px;
+  width: 100px;
   margin: 5px 0;
 `;
 

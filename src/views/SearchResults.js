@@ -7,7 +7,7 @@ import SearchItem from 'components/SearchItem/SearchItem';
 
 const Wrapper = styled.div`
   width: 100%;
-  flex-grow: 1;
+  margin-bottom: 100px;
 
   h1 {
     font-size: 2.4rem;
@@ -42,7 +42,7 @@ const SearchResults = () => {
 
   return (
     <Wrapper>
-      <h1>Search results:</h1>
+      <h1>Search results for: {queryValues.q}</h1>
       {isLoading ? (
         <p>is loading...</p>
       ) : (

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   max-width: 1024px;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 `;
 
 export const RecommendetMovies = styled.div`
