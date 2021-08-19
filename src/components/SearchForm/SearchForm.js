@@ -17,7 +17,7 @@ const SearchForm = ({ transparent }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    history.push(`/search?q=${searchValue}`);
+    history.push(`/search?q=${searchValue}&page=1`);
     clearSearchValue();
   };
 
