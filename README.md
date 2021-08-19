@@ -21,6 +21,8 @@ $ npm install
 $ npm start
 
 ```
+## live
+* Here is a working website: https://movie-search-aw.netlify.app/.
 
 ## status
 * in progress
