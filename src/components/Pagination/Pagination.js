@@ -50,7 +50,7 @@ const Pagination = ({ totalPages, currentPage, searchValue }) => {
           </PaginationItem>
         )}
 
-        {currentPage > 3 && (
+        {currentPage > 3 && totalPages > 5 && (
           <>
             <PaginationItem>
               <Link to={`/search?q=${searchValue}&page=1`}>1</Link>
@@ -69,7 +69,7 @@ const Pagination = ({ totalPages, currentPage, searchValue }) => {
             </PaginationItem>
           )
         )}
-        {currentPage <= totalPages - 3 && (
+        {currentPage <= totalPages - 3 && totalPages > 5 && (
           <>
             <PaginationItem>...</PaginationItem>
             <PaginationItem>
