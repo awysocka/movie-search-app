@@ -38,9 +38,7 @@ const SearchResults = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=a6588dff4f0d571a26d4e1cf68e2a5f2&language=en-US&page=${currentPage}&include_adult=false&query=${searchValue}`
-      )
+      .get(`/.netlify/functions/api?page=${currentPage}&q=${searchValue}`)
       .then((response) => {
         setMoviesList(response.data.results);
         setTotalPages(response.data.total_pages);
