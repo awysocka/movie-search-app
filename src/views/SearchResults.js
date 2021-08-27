@@ -38,7 +38,7 @@ const SearchResults = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`/.netlify/functions/api?page=${currentPage}&q=${searchValue}`)
+      .get(`/.netlify/functions/search?page=${currentPage}&q=${searchValue}`)
       .then((response) => {
         setMoviesList(response.data.results);
         setTotalPages(response.data.total_pages);

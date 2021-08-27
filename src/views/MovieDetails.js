@@ -11,9 +11,7 @@ const MovieDetails = () => {
 
   useEffect(() => {
     axios
-      .get(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=a6588dff4f0d571a26d4e1cf68e2a5f2&language=en-US`
-      )
+      .get(`/.netlify/functions/details/${id}`)
       .then((response) => setMovieInfo(response.data))
       .then(() => setIsLoading(false));
   }, [id]);

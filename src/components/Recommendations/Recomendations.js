@@ -15,9 +15,7 @@ const Recommendations = ({ id }) => {
 
   useEffect(() => {
     axios
-      .get(
-        `https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=a6588dff4f0d571a26d4e1cf68e2a5f2&language=en-US&page=1`
-      )
+      .get(`/.netlify/functions/recomendations/${id}`)
       .then((response) => setRecommendetMovies(response.data.results));
   }, [id]);
 
